@@ -12,7 +12,7 @@
     "react-scripts-ts-antd": "2.17.0"
   },
   "scripts": {
-    "start": "react-scripts-ts-antd start",
+    "start": "PORT=4000 react-scripts-ts-antd start",
     "build": "react-scripts-ts-antd build",
     "test": "react-scripts-ts-antd test --env=jsdom",
     "eject": "react-scripts-ts-antd eject"
