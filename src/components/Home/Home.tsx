@@ -3,7 +3,7 @@ import { Dropdown,Icon,Menu } from "antd";
 import Todos from 'src/components/Todos/Todos'
 import axios from 'src/config/axios';
 import history from 'src/config/history'
-import './Index.scss'
+import './Home.scss'
 
 interface IRouter {
 	history: any;
@@ -25,7 +25,7 @@ const menu = (
 	</Menu>
 );
 
-class Index extends React.Component<IRouter,IIndexState> {
+class Home extends React.Component<IRouter,IIndexState> {
 
 	constructor(props: any){
 		super(props)
@@ -45,7 +45,7 @@ class Index extends React.Component<IRouter,IIndexState> {
 
 	render() {
 		return (
-			<div className="Index" id="Index">
+			<div className="Home" id="Home">
 				<header>
 					<span className="logo">LOGO</span>
 					<Dropdown overlay={menu}>
@@ -63,4 +63,4 @@ class Index extends React.Component<IRouter,IIndexState> {
 	}
 }
 
-export default Index;
+export default Home;
