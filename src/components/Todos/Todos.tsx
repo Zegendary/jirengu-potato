@@ -46,10 +46,6 @@ class Todos extends React.Component<any> {
 						this.unCompletedTodos.map(t=>
 							<TodoItem key={t.id} {...t}/>)
 					}
-					{
-						this.completedTodos.map(t=>
-							<TodoItem key={t.id} {...t}/>)
-					}
 				</div>
 			</div>
 		);
