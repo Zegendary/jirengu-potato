@@ -1,6 +1,7 @@
 {
   "name": "jirengu-potato",
   "version": "0.1.0",
+  "homepage": "https://zegendary.github.io/jirengu-potato",
   "private": true,
   "dependencies": {
     "antd": "^3.13.4",
@@ -17,6 +18,8 @@
     "redux": "^4.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "PORT=4000 react-scripts-ts-antd start",
     "build": "react-scripts-ts-antd build",
     "test": "react-scripts-ts-antd test --env=jsdom",
@@ -28,6 +31,7 @@
     "@types/react": "^16.8.3",
     "@types/react-dom": "^16.8.2",
     "@types/react-router-dom": "^4.3.1",
+    "gh-deploy": "^0.2.3",
     "typescript": "^3.3.3"
   }
 }
